@@ -3,22 +3,23 @@
 @using System.Globalization
 @using Microsoft.AspNetCore.Localization
 
-<PageTitle>Hypotečka.</PageTitle>
+<PageTitle>Hypo.tečka</PageTitle>
 
-<h1>Hypotečka.</h1>
+<h1>Hypo.tečka</h1>
 
 
 <EditForm Model="@_mortgage" OnValidSubmit="_mortgage.CalculateMortgage">
+    <DataAnnotationsValidator />
     <label for="loan-amount">Zapůjčená částka</label>
-    <br />
-    <InputNumber @bind-Value="_mortgage.LoanAmount" class="form-control" id="loan-amount" placeholder="Kolik si chcete půjčit?" />
+    <br/>
+    <InputNumber @bind-Value="_mortgage.LoanAmount" class="form-control" id="loan-amount" placeholder="Kolik si chcete půjčit?"/>
     <label for="rate">Úroková sazba</label>
-    <br />
-    <InputNumber @bind-Value="_mortgage.Rate" class="form-control" id="rate" placeholder="Jaký Vám nabídli úrok?" />
+    <br/>
+    <InputNumber @bind-Value="_mortgage.Rate" class="form-control" id="rate" placeholder="Jaký Vám nabídli úrok?"/>
     <label for="term">Doba splácení v letech</label>
-    <br />
-    <InputNumber @bind-Value="_mortgage.Term" class="form-control" id="term" placeholder="Kolik let budete splácet?" />
-    <br />
+    <br/>
+    <InputNumber @bind-Value="_mortgage.Term" class="form-control" id="term" placeholder="Kolik let budete splácet?"/>
+    <br/>
     <button type="submit" class="btn-secondary">Calculate</button>
 </EditForm>
 <br />
