@@ -5,7 +5,9 @@
     <projectFile profileName="IIS Express">Mortgage Calc/Mortgage Calc.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66d2c3ff-917c-4331-9e3f-dbd9b6862146" name="Changes" comment="Working mortgage form" />
+    <list default="true" id="66d2c3ff-917c-4331-9e3f-dbd9b6862146" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mortgage Calc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mortgage Calc/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,15 +25,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Mortgage Calc">
     <configuration name="Mortgage Calc" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Mortgage Calc/Mortgage Calc.csproj" />
@@ -73,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1656336513081</updated>
       <workItem from="1656336519808" duration="5069000" />
-      <workItem from="1656394920398" duration="10901000" />
+      <workItem from="1656394920398" duration="11022000" />
+      <workItem from="1656411791227" duration="495000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1656336555334</created>
@@ -110,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656406855366</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added unversioned files">
+      <created>1656407071457</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656407071457</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +147,7 @@
     <MESSAGE value="created generic index site" />
     <MESSAGE value="Working counter on generic page" />
     <MESSAGE value="Working mortgage form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working mortgage form" />
+    <MESSAGE value="Added unversioned files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unversioned files" />
   </component>
 </project>

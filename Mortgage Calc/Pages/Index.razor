@@ -1,9 +1,40 @@
 ﻿@page "/"
+@using Mortgage_Calc.Data
+@using System.Globalization
+@using Microsoft.AspNetCore.Localization
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Hypotečka.</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Hypotečka.</h1>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+<EditForm Model="@_mortgageFormModel" OnValidSubmit="CalculateMortgage">
+    <label for="loan-amount">Zapůjčená částka</label>
+    <br/>
+    <InputNumber @bind-Value="_mortgageFormModel.LoanAmount" class="form-control" id="loan-amount" placeholder="Kolik si chcete půjčit?"/>
+    <label for="rate">Úroková sazba</label>
+    <br/>
+    <InputNumber @bind-Value="_mortgageFormModel.Rate" class="form-control" id="rate" placeholder="Jaký Vám nabídli úrok?"/>
+    <label for="term">Doba splácení v letech</label>
+    <br/>
+    <InputNumber @bind-Value="_mortgageFormModel.Term" class="form-control" id="term" placeholder="Kolik let budete splácet?"/>
+    <br/>
+    <button type="submit" class="btn-secondary">Calculate</button>
+</EditForm>
+<br/>
+<h1>Měsíční splátka: @MonthlyPayment.ToString("C", new CultureInfo("cs-cz"))</h1>
+
+
+@code {
+
+    private readonly MortgageFormModel _mortgageFormModel = new();
+    private double MonthlyPayment { get; set; }
+
+    private void CalculateMortgage()
+    {
+        var monthlyRate = ((_mortgageFormModel.Rate ?? 0) / 100) / 12;
+        var months = (_mortgageFormModel.Term ?? 0) * 12;
+        MonthlyPayment = (_mortgageFormModel.LoanAmount ?? 0) * ((monthlyRate * Math.Pow((1 + monthlyRate), months)) / (Math.Pow((1 + monthlyRate), months) - 1));
+    }
+
+}
