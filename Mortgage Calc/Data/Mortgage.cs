@@ -20,4 +20,5 @@ public class Mortgage
         TotalPaid = months * MonthlyPayment;
         TotalInterest = TotalPaid - loan;
     }
+
 }

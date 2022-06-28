@@ -11,17 +11,18 @@
 <EditForm Model="@_mortgage" OnValidSubmit="_mortgage.CalculateMortgage">
     <DataAnnotationsValidator />
     <label for="loan-amount">Zapůjčená částka</label>
-    <br/>
-    <InputNumber @bind-Value="_mortgage.LoanAmount" class="form-control" id="loan-amount" placeholder="Kolik si chcete půjčit?"/>
+    <br />
+    <InputNumber @bind-Value="_mortgage.LoanAmount" class="form-control" id="loan-amount" placeholder="Kolik si chcete půjčit?" />
     <label for="rate">Úroková sazba</label>
-    <br/>
-    <InputNumber @bind-Value="_mortgage.Rate" class="form-control" id="rate" placeholder="Jaký Vám nabídli úrok?"/>
+    <br />
+    <InputNumber @bind-Value="_mortgage.Rate" class="form-control" id="rate" placeholder="Jaký Vám nabídli úrok?" />
     <label for="term">Doba splácení v letech</label>
-    <br/>
-    <InputNumber @bind-Value="_mortgage.Term" class="form-control" id="term" placeholder="Kolik let budete splácet?"/>
-    <br/>
+    <br />
+    <InputNumber @bind-Value="_mortgage.Term" class="form-control" id="term" placeholder="Kolik let budete splácet?" />
+    <br />
     <button type="submit" class="btn-secondary">Calculate</button>
 </EditForm>
+<button class="btn-secondary" @onclick="ResetCalculator">Reset</button>
 <br />
 <h1>Měsíční splátka: @_mortgage.MonthlyPayment.ToString("C", new CultureInfo("cs-cz"))</h1>
 <h1>Celková částka: @_mortgage.TotalPaid.ToString("C", new CultureInfo("cs-cz"))</h1>
@@ -29,5 +30,10 @@
 
 
 @code {
-    private readonly Mortgage _mortgage = new();
+    private Mortgage _mortgage = new();
+
+    public void ResetCalculator()
+    {
+        _mortgage = new Mortgage();
+    }
 }
