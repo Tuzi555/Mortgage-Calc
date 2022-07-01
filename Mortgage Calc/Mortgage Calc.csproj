@@ -6,4 +6,34 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\assets\favicon.ico" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\assets\img\avataaars.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\assets\img\portfolio\cabin.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\assets\img\portfolio\cake.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\assets\img\portfolio\circus.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\assets\img\portfolio\game.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\assets\img\portfolio\safe.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\assets\img\portfolio\submarine.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\css\styles.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\index.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\startbootstrap-freelancer-gh-pages\js\scripts.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\FONT-LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.otf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\ICON-LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\README.md" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\site.css" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\img" />
+    </ItemGroup>
+
 </Project>

@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@using Mortgage_Calc.Shared
+@namespace Mortgage_Calc.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <base href="~/"/>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link href="Mortgage_Calc.styles.css" rel="stylesheet"/>
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered"/>
+
+</head>
+<body>
+@RenderBody()
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="_framework/blazor.server.js"></script>
+</body>
+</html>
