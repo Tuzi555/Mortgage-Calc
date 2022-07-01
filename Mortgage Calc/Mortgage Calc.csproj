@@ -33,7 +33,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Include="wwwroot\img\background.jpg" />
+      <Folder Include="wwwroot\img" />
     </ItemGroup>
 
 </Project>
