@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.0-beta1"
-  }
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
+    "vite": "^2.9.13"
+  },
+  "name": "mortgage-calc",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuzi555/Mortgage-Calc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tuzi555/Mortgage-Calc/issues"
+  },
+  "homepage": "https://github.com/Tuzi555/Mortgage-Calc#readme"
 }
