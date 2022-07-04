@@ -67,6 +67,8 @@
       <_ContentIncludedByDefault Remove="wwwroot\templates\Arsha\forms\Readme.txt" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\forms\contact.php" />
+      <_ContentIncludedByDefault Remove="wwwroot\forms\Readme.txt" />
     </ItemGroup>
 
     <ItemGroup>
