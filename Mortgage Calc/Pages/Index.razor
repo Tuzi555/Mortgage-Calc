@@ -3,66 +3,76 @@
 
 <PageTitle>Mortgauge</PageTitle>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-4">
-            <EditForm Model="@_mortgage" OnValidSubmit="_mortgage.CalculateMortgage">
-                <DataAnnotationsValidator/>
+<main id="main">
+    <section id="calculator" class="contact">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
 
-                <div class="form-floating mb-3">
-                    <InputNumber @bind-Value="_mortgage.LoanAmount"
-                                 ParsingErrorMessage="_mortgage.LoanAmount.ErrorMessage"
-                                 class="form-control"
-                                 id="loan-amount"
-                                 placeholder="2000000"
-                                 aria-describedby="loan-help"/>
-                    <label for="loan-amount">Loan amount</label>
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-calendar-event"></i>
+                            <h4>@_mortgage.MonthlyPayment.ToString("C")</h4>
+                            <p>Monthly payment</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-currency-dollar"></i>
+                            <h4>@_mortgage.TotalPaid.ToString("C")</h4>
+                            <p>Total paid</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <h4>@_mortgage.TotalInterest.ToString("C")</h4>
+                            <p>Total interest</p>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="form-floating mb-3">
-                    <InputNumber @bind-Value="_mortgage.Rate"
-                                 ParsingErrorMessage="_mortgage.Rate.ErrorMessage"
-                                 class="form-control"
-                                 id="rate"
-                                 placeholder="5.64"/>
-                    <label for="rate">Interest rate</label>
 
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <EditForm class="php-email-form" Model="@_mortgage" OnValidSubmit="_mortgage.CalculateMortgage">
+                        <DataAnnotationsValidator/>
+
+                        <div class="form-group">
+                            <label for="loan-amount">Loan amount</label>
+                            <InputNumber @bind-Value="_mortgage.LoanAmount"
+                                         ParsingErrorMessage="_mortgage.LoanAmount.ErrorMessage"
+                                         class="form-control"
+                                         id="loan-amount"/>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="rate">Interest rate</label>
+                            <InputNumber @bind-Value="_mortgage.Rate"
+                                         ParsingErrorMessage="_mortgage.Rate.ErrorMessage"
+                                         class="form-control"
+                                         id="rate"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="term">Term in years</label>
+                            <InputNumber @bind-Value="_mortgage.Term"
+                                         ParsingErrorMessage="_mortgage.Term.ErrorMessage"
+                                         class="form-control"
+                                         id="term"/>
+                        </div>
+                        <ValidationSummary/>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                            <button type="reset" class="btn btn-secondary" @onclick="ResetCalculator">Reset</button>
+                        </div>
+
+                    </EditForm>
                 </div>
-                <div class="form-floating mb-3">
-                    <InputNumber @bind-Value="_mortgage.Term"
-                                 ParsingErrorMessage="_mortgage.Term.ErrorMessage"
-                                 class="form-control"
-                                 id="term"
-                                 placeholder="30"/>
-                    <label for="term">Term in years</label>
-                </div>
 
-                <ValidationSummary/>
+            </div>
 
-                <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary">Calculate</button>
-                    <button type="reset" class="btn btn-secondary" @onclick="ResetCalculator">Reset</button>
-                </div>
-
-            </EditForm>
         </div>
-        <div class="container col-8">
-            <div class="row">
-                <p class="h1 col-6">Monthly payment:</p>
-                <p class="h1 col-6 text-end">@_mortgage.MonthlyPayment.ToString("F")</p>
-            </div>
-            <div class="row">
-                <p class="h1 col-6">Total amount:</p>
-                <p class="h1 col-6 text-end">@_mortgage.TotalPaid.ToString("F")</p>
-            </div>
-            <div class="row">
-                <p class="h1 col-6">Total interest:</p>
-                <p class="h1 col-6 text-end"> @_mortgage.TotalInterest.ToString("F")</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
-</div>
+</main>
 
 @code {
     private Mortgage _mortgage = new();
