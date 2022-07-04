@@ -10,17 +10,30 @@
                 <DataAnnotationsValidator/>
 
                 <div class="form-floating mb-3">
-                    <InputNumber @bind-Value="_mortgage.LoanAmount" ParsingErrorMessage="_mortgage.LoanAmount.ErrorMessage" class="form-control" id="loan-amount" placeholder="2000000" aria-describedby="loan-help"/>
+                    <InputNumber @bind-Value="_mortgage.LoanAmount"
+                                 ParsingErrorMessage="_mortgage.LoanAmount.ErrorMessage"
+                                 class="form-control"
+                                 id="loan-amount"
+                                 placeholder="2000000"
+                                 aria-describedby="loan-help"/>
                     <label for="loan-amount">Loan amount</label>
 
                 </div>
                 <div class="form-floating mb-3">
-                    <InputNumber @bind-Value="_mortgage.Rate" ParsingErrorMessage="_mortgage.Rate.ErrorMessage" class="form-control" id="rate" placeholder="5.64"/>
+                    <InputNumber @bind-Value="_mortgage.Rate"
+                                 ParsingErrorMessage="_mortgage.Rate.ErrorMessage"
+                                 class="form-control"
+                                 id="rate"
+                                 placeholder="5.64"/>
                     <label for="rate">Interest rate</label>
 
                 </div>
                 <div class="form-floating mb-3">
-                    <InputNumber @bind-Value="_mortgage.Term" ParsingErrorMessage="_mortgage.Term.ErrorMessage" class="form-control" id="term" placeholder="30"/>
+                    <InputNumber @bind-Value="_mortgage.Term"
+                                 ParsingErrorMessage="_mortgage.Term.ErrorMessage"
+                                 class="form-control"
+                                 id="term"
+                                 placeholder="30"/>
                     <label for="term">Term in years</label>
                 </div>
 

@@ -30,11 +30,45 @@
       <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\ICON-LICENSE" />
       <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\README.md" />
       <_ContentIncludedByDefault Remove="wwwroot\css\site.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-grid.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-grid.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-grid.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-grid.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-grid.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-grid.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-grid.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-grid.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-reboot.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-reboot.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-reboot.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-reboot.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-reboot.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-reboot.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-reboot.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-reboot.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-utilities.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-utilities.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-utilities.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-utilities.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-utilities.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-utilities.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-utilities.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap-utilities.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\tailwind.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\templates\Arsha\forms\contact.php" />
+      <_ContentIncludedByDefault Remove="wwwroot\templates\Arsha\forms\Readme.txt" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="wwwroot\img" />
-      <Folder Include="wwwroot\templates" />
     </ItemGroup>
 
 </Project>
