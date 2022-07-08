@@ -1291,7 +1291,6 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
     border-top: 3px solid #47b2e4;
-    border-bottom: 3px solid #47b2e4;
     padding: 30px;
     background: #fff;
     width: 100%;
@@ -1363,7 +1362,6 @@ section {
 .contact .php-email-form {
     width: 100%;
     border-top: 3px solid #47b2e4;
-    border-bottom: 3px solid #47b2e4;
     padding: 30px;
     background: #fff;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -1725,4 +1723,9 @@ section {
     #footer .credits {
         padding-top: 4px;
     }
+}
+.form-control::-webkit-inner-spin-button,
+.form-control::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

@@ -71,8 +71,4 @@
       <_ContentIncludedByDefault Remove="wwwroot\forms\Readme.txt" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="wwwroot\img" />
-    </ItemGroup>
-
 </Project>
